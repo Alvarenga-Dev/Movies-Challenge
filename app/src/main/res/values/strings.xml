@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movies Challenge</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Movies Challenge</string>
+    <string name="nav_header_subtitle">hello@alvarenga.dev</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_popular">Movies Popular</string>
+    <string name="menu_favorite">Favorites</string>
+</resources>
