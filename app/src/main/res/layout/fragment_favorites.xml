@@ -3,11 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.favorites.FavoritesFragment">
 
     <TextView
+        android:id="@+id/text_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/design_default_color_error"
+        android:visibility="gone"
+        tools:text="Error messages" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcy_movies_populars"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
-
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:itemCount="6"
+        tools:listitem="@layout/item_favorite" />
 </FrameLayout>

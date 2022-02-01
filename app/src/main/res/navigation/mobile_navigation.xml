@@ -9,12 +9,29 @@
         android:id="@+id/nav_popular"
         android:name="com.alvarengadev.movieschallenge.ui.populars.PopularFragment"
         android:label="@string/menu_popular"
-        tools:layout="@layout/fragment_popular" />
+        tools:layout="@layout/fragment_popular" >
+        <action
+            android:id="@+id/action_nav_popular_to_detailsFragment"
+            app:destination="@id/nav_details" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_favorites"
         android:name="com.alvarengadev.movieschallenge.ui.favorites.FavoritesFragment"
         android:label="@string/menu_favorite"
-        tools:layout="@layout/fragment_favorites" />
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_nav_favorites_to_nav_details"
+            app:destination="@id/nav_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.alvarengadev.movieschallenge.ui.details.DetailsFragment"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="movieId"
+            app:argType="integer" />
+    </fragment>
 
 </navigation>

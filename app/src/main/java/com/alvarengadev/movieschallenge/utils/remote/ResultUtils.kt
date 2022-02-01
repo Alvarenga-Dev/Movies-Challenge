@@ -1,4 +1,4 @@
-package com.alvarengadev.movieschallenge.utils
+package com.alvarengadev.movieschallenge.utils.remote
 
 data class ResultUtils<out T>(
     val status: Status,
